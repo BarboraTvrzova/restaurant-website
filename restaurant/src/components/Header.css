@@ -1,0 +1,147 @@
+.header-home {
+  width: 100%;
+  background: url('../images/homepage/hero-bg-desktop.jpg') no-repeat center
+    center/cover;
+  padding-top: 65px;
+  height: calc(100vh + 100px);
+  min-height: 820px;
+}
+
+.header-booking {
+  background: url('../images/booking/hero-bg-desktop.jpg') no-repeat center
+    center/cover;
+  position: relative;
+  height: 600px;
+  padding-top: 65px;
+  width: 100%;
+}
+
+.header-booking::after {
+  content: '';
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.header-booking * {
+  position: inherit;
+  z-index: 100;
+}
+
+.header-home .heading {
+  width: 523px;
+  margin-top: 153px;
+}
+
+.header-booking .heading {
+  width: 445px;
+  height: 216px;
+  margin-top: 153px;
+}
+
+.header p {
+  color: #fff;
+  padding-top: 24px;
+  padding-bottom: 42px;
+}
+
+.book-table {
+  width: 245px;
+  height: 64px;
+}
+.none {
+  display: none;
+}
+
+.bg-home {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .header-home {
+    background: #171717;
+    padding-top: 374px;
+    text-align: center;
+    height: unset;
+    height: 100%;
+    padding-bottom: 152px;
+    min-height: unset;
+  }
+
+  .header-booking {
+    padding-top: 56px;
+  }
+
+  .header-home .heading {
+    width: unset;
+    height: unset;
+    margin: 0 auto;
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-booking .heading {
+    width: 100%;
+    max-width: 689px;
+    margin: 0 auto;
+    margin-top: 64px;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .header-home h1 {
+    max-width: 503px;
+  }
+  .header-home p {
+    padding-bottom: 24px;
+    max-width: 573px;
+  }
+  .bg-home {
+    display: block;
+    background: url('../images/homepage/bg-pic.jpeg') no-repeat center bottom /
+      100%;
+    position: absolute;
+    top: -450px;
+    left: 0;
+    width: 100%;
+    height: 800px;
+  }
+}
+
+@media (max-width: 557px) {
+  .header-home {
+    padding-top: 232px;
+    text-align: center;
+    height: 748px;
+    padding-bottom: 152px;
+    min-height: unset;
+  }
+
+  .bg-home {
+    height: 376px;
+    top: -180px;
+    background: url('../images/homepage/bg-pic.jpeg') no-repeat center bottom /
+      95%;
+  }
+
+  .header-home img {
+    width: 82.4px;
+    height: 32px;
+  }
+
+  .header-booking .heading {
+    width: 100%;
+    max-width: 327px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

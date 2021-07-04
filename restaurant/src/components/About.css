@@ -1,0 +1,324 @@
+.about {
+  background: #fff;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  color: #242b37;
+}
+
+.about-a .pic-container {
+  width: 540px;
+  height: 720px;
+  margin-top: -70px;
+  z-index: 3;
+  background: url('../images/homepage/enjoyable-place-desktop.jpg') no-repeat
+    center center/cover;
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+}
+
+.about-text {
+  max-width: 445px;
+  padding-top: 177px;
+  margin-left: 10px;
+}
+
+.divider {
+  margin-bottom: 48px;
+}
+
+.about-text p {
+  padding-top: 16px;
+}
+
+.about-b .about-section {
+  margin-top: 191px;
+  flex-direction: row-reverse;
+}
+.about-b .about-text {
+  margin-left: 0;
+}
+
+.about-a {
+  background-image: url('../images/patterns/pattern-curve-top-right.svg');
+  background-repeat: no-repeat;
+  background-position: left 250px;
+}
+
+.about-b {
+  background-image: url('../images/patterns/pattern-curve-top-left.svg');
+  background-repeat: no-repeat;
+  background-position: right 440px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.about-b .pic-container {
+  width: 540px;
+  height: 720px;
+  margin-top: -70px;
+  z-index: 3;
+  background: url('../images/homepage/locally-sourced-desktop.jpg') no-repeat
+    center center/cover;
+  z-index: 5;
+  position: relative;
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+}
+.about-b .pic-container::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 282px;
+  left: 494px;
+  width: 160px;
+  max-width: 160px;
+  height: 76px;
+  background: url('../images/patterns/pattern-lines.svg');
+  z-index: 10;
+}
+
+.black {
+  width: 100%;
+  height: 80px;
+  position: relative;
+  background: #111111;
+  margin-top: -80px;
+}
+
+.menu-highlights {
+  background: #111;
+  color: #fff;
+  padding-top: 200px;
+  padding-bottom: 120px;
+  margin-top: -80px;
+  width: 100%;
+}
+.menu-text {
+  display: flex;
+  justify-content: space-between;
+}
+.about-menu {
+  width: 445px;
+}
+.about-menu p {
+  padding-top: 16px;
+}
+
+.menu-examples {
+  width: 540px;
+  max-width: 100%;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.item:first-of-type {
+  padding-top: 0;
+}
+.item:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.food-description {
+  width: 350px;
+}
+
+.food-img {
+  width: 128px;
+  height: 96px;
+  position: relative;
+}
+.food-img::after {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 1px;
+  position: absolute;
+  right: -32px;
+  top: 18px;
+  background: #9e7f66;
+  z-index: 10;
+}
+
+.food-img-1 {
+  background: url('../images/homepage/salmon-mobile.jpg');
+  background-size: cover;
+}
+.food-img-2 {
+  background: url('../images/homepage/beef-mobile.jpg');
+  background-size: cover;
+}
+.food-img-3 {
+  background: url('../images/homepage/chocolate-mobile.jpg');
+  background-size: cover;
+}
+
+@media (max-width: 1260px) {
+  .about-b::after {
+    right: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-a {
+    background-position: -516px 190px;
+  }
+  .about-b {
+    background-position: 384px bottom;
+    position: relative;
+    margin-bottom: 80px;
+    padding-bottom: 120px;
+  }
+
+  .about-section,
+  .about-b .about-section {
+    flex-direction: column;
+    align-items: center;
+    height: 673px;
+    justify-content: flex-start;
+  }
+  .about-b .about-section {
+    margin-top: 120px;
+    /* padding-bottom: 120px; */
+    overflow-x: hidden;
+  }
+  .about-a .pic-container {
+    width: 573px;
+    max-width: 100%;
+    height: 360px;
+    margin-top: -6px;
+    z-index: 3;
+    background: url('../images/homepage/enjoyable-place-tablet.jpg') no-repeat
+      center center/cover;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+  }
+  .about-b .pic-container {
+    width: 573px;
+    max-width: 100%;
+    height: 360px;
+    margin-top: 0;
+    z-index: 3;
+    background: url('../images/homepage/locally-sourced-tablet.jpg') no-repeat
+      center center/cover;
+    z-index: 5;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+    position: relative;
+  }
+  .about-b .pic-container::after {
+    top: 228px;
+    left: unset;
+    right: -102px;
+  }
+  .divider {
+    margin-bottom: 32px;
+  }
+  .about-text {
+    max-width: 457px;
+    padding-top: 56px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .black {
+    display: none;
+  }
+  .menu-highlights {
+    padding-top: 96px;
+    text-align: center;
+    padding-bottom: 96px;
+  }
+  .menu-text {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-menu {
+    padding-bottom: 56px;
+  }
+  .item {
+    text-align: left;
+  }
+  .food-description {
+    padding-left: 10px;
+  }
+  .food-img::after {
+    top: 20px;
+  }
+}
+
+@media (max-width: 557px) {
+  .about-a,
+  .about-b {
+    background-image: none;
+  }
+  .about-b {
+    padding-bottom: 80px;
+  }
+  .about-a .about-section {
+    padding-bottom: 80px;
+  }
+  .about-b .about-section {
+    margin-top: 0px;
+  }
+
+  .about-a .pic-container {
+    height: 400px;
+    width: 375px;
+    max-width: 100%;
+    margin-top: -72px;
+    z-index: 60;
+    background: url('../images/homepage/enjoyable-place-tablet.jpg') no-repeat
+      center center/cover;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+  }
+  .about-b .pic-container {
+    height: 400px;
+    width: 375px;
+    max-width: 100%;
+    margin-top: 0px;
+    z-index: 60;
+    background: url('../images/homepage/locally-sourced-tablet.jpg') no-repeat
+      center center/cover;
+    box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+  }
+  .about-b .pic-container::after {
+    display: none;
+  }
+
+  .about-menu {
+    width: 327px;
+    max-width: 100%;
+  }
+
+  .item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: flex-start;
+    height: 418px;
+  }
+  .food-description {
+    width: 300px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 0;
+    padding-top: 32px;
+  }
+  .food-img {
+    width: 327px;
+    height: 245px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .food-img::after {
+    display: none;
+  }
+}

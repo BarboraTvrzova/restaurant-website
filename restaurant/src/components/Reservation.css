@@ -1,0 +1,234 @@
+.form {
+  width: 540px;
+  height: 545px;
+  padding: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: -342px;
+  right: 165px;
+  background: #ffffff;
+  box-shadow: 0px 75px 100px -50px rgba(56, 66, 85, 0.503223);
+  z-index: 300;
+  margin-left: 40px;
+}
+
+input[type='text'],
+input[type='mail'],
+input[type='submit'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+}
+
+.input-field {
+  width: 100%;
+}
+
+.red.input-field {
+  position: relative;
+}
+
+.form-field,
+.react-datepicker__input-container {
+  border: none;
+  border-bottom: 1px solid #8e8e8e;
+  padding-bottom: 16px;
+  font-size: 18px;
+  line-height: 28px;
+  padding-top: 16px;
+  outline: none;
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  border: none;
+  font-size: 18px;
+  line-height: 28px;
+  outline: none;
+  width: 80px;
+  padding-left: 16px;
+}
+
+.number {
+  width: 80px;
+  padding-left: 16px;
+}
+
+.pick-date.wrong,
+.pick-date.wrong .number,
+.pick-time.wrong,
+.pick-time.wrong .number {
+  color: #b54949;
+  border-color: #b54949;
+}
+.pick-date.wrong .number::placeholder,
+.pick-time.wrong .number::placeholder {
+  color: #b54949;
+}
+.number.last {
+  width: 97px;
+}
+
+.pick-date,
+.pick-time {
+  display: flex;
+  align-items: center;
+}
+
+.inputs {
+  margin-left: 52px;
+  display: flex;
+  justify-content: space-between;
+  width: 289px;
+  font-size: 18px;
+  line-height: 28px;
+  height: 61px;
+}
+.people {
+  width: 100%;
+  padding-right: 27px;
+  padding-left: 27px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.minus {
+  width: 8.8px;
+  height: 3.3px;
+}
+.minus.disabled {
+  opacity: 0.5;
+}
+
+.plus {
+  width: 9.24px;
+  height: 9.24px;
+}
+
+.btn-reserve {
+  background: #111111;
+  color: #fff;
+  height: 64px;
+  margin-top: 32px;
+}
+.btn-reserve:disabled {
+  color: #111;
+  background-color: #fff;
+  box-shadow: none;
+  border: 1px solid #111;
+  cursor: unset;
+}
+.red.form-field {
+  color: #b54949;
+  border-color: #b54949;
+  position: relative;
+}
+.red .form-field::placeholder {
+  color: #b54949;
+}
+
+.invalid.red.input-field::after {
+  content: 'Enter a valid email';
+  color: #b54949;
+  width: 104px;
+  height: 11px;
+  position: absolute;
+  left: 16px;
+  bottom: -21px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: -0.125px;
+  z-index: 500;
+}
+.red.input-field::after {
+  content: 'This field is required';
+  color: #b54949;
+  width: 104px;
+  height: 11px;
+  position: absolute;
+  left: 16px;
+  bottom: -21px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 11px;
+  letter-spacing: -0.125px;
+  z-index: 500;
+}
+
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50000;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 48px;
+}
+
+.thanks h4 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.thanks h3 span {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.hiden {
+  display: none;
+}
+
+@media (max-width: 1260px) {
+  .form {
+    right: 36px;
+    width: 530px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form {
+    top: -230px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 35px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 557px) {
+  .form {
+    width: 327px;
+    height: 585px;
+    top: -177px;
+    padding: 32px;
+    margin-top: 0;
+    max-width: 100%;
+  }
+  .pick-date,
+  .pick-time {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 32px;
+    max-width: 100%;
+  }
+  .inputs {
+    margin-left: 0;
+    max-width: 100%;
+  }
+  .react-datepicker__input-container input {
+    width: 73px;
+    padding-left: 14px;
+  }
+}

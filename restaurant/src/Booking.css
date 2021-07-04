@@ -1,0 +1,28 @@
+.booking {
+  background: white;
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+.reservation {
+  height: 320px;
+  width: 100%;
+  background-color: #f2f2f2;
+  background-image: url('./images/patterns/pattern-curve-bottom-right.svg');
+  background-repeat: no-repeat;
+  background-size: 68vmin 100%;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .reservation {
+    height: 435px;
+    background-image: none;
+  }
+}
+
+@media (max-width: 557px) {
+  .reservation {
+    height: 534px;
+  }
+}
